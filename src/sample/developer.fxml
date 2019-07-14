@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" styleClass="aPane" stylesheets="@Mycss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="131.0" layoutX="96.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/developerPic.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="13.0" layoutY="144.0" prefHeight="53.0" prefWidth="275.0" text="Asad Chuadhry" textAlignment="CENTER" textFill="#0707bf">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="197.0" prefHeight="24.0" prefWidth="156.0" text="chuadhry243@gmail.com" textFill="#70058d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="221.0" prefHeight="24.0" prefWidth="156.0" text="+923005229243" textFill="#70058d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

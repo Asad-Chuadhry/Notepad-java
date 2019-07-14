@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Mycss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <MenuBar styleClass="menuBar" stylesheets="@Mycss.css" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu id="menuu" fx:id="Menu" mnemonicParsing="false" styleClass="menuu">
+            <items>
+              <MenuItem id="menuItem" mnemonicParsing="false" onAction="#mNew" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" text="New" />
+                     </graphic></MenuItem>
+                  <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" onAction="#mOpen" text="Open" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" fx:id="btnSave" disable="true" onAction="#mSave" text="Save" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" fx:id="btnSaveAs" disable="true" onAction="#mSaveAs" text="Save as" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" fx:id="btnClose" disable="true" onAction="#mClose" text="Close" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" onAction="#mExit" text="Exit" />
+                     </graphic>
+                  </MenuItem>
+            </items>
+               <graphic>
+                  <Label id="lmenu" text="File" textAlignment="CENTER" textFill="#d6eb1e" />
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false" styleClass="menuu">
+            <items>
+              <MenuItem mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" mnemonicParsing="false" onAction="#changeBackgroundColor" text="background color" />
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" mnemonicParsing="false" onAction="#changeFontSize" text="font size" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" mnemonicParsing="false" onAction="#changeFontColor" text="font color" />
+                     </graphic>
+                  </MenuItem>
+            </items>
+               <graphic>
+                  <Label id="lmenu" text="Option" />
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false">
+            <graphic>
+                  <Label id="lmenu" text="About" />
+            </graphic>
+               <items>
+                  <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                     <graphic>
+                        <Button id="litem" fx:id="btnAbout" onAction="#mAbout" text="Developer Info" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea id="txtArea" fx:id="txtArea" prefHeight="200.0" prefWidth="200.0" visible="false" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+   </center>
+</BorderPane>

@@ -1,0 +1,43 @@
+.menuBar
+{
+    -fx-background-color: rgba(10, 8, 45, 0.83);
+    -fx-border-radius: 5px;
+    -fx-border-color: #03040c;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow( one-pass-box , yellow , 8 , 0.0 , 2 , 0);
+
+}
+#lmenu{
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+    -fx-spacing: 5px;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0);
+}
+#bPane{
+    -fx-background-color: rgba(10, 8, 45, 0.83);
+    -fx-effect: dropshadow( one-pass-box , yellow , 8 , 0.0 , 2 , 0);
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 5 5;
+}
+#litem{
+    -fx-background-color: rgba(8, 8, 72, 0);
+    -fx-text-fill: yellow;
+}
+.menu-item{
+    -fx-background-color: rgba(0, 0, 45, 0.83);
+}
+.text-area{
+    text-area-background: rgba(12, 12, 12, 0.72);
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+.text-area .content{
+    -fx-background-color: text-area-background;
+}
+.aPane{
+    -fx-background-color: rgba(154, 200, 145, 0.72);
+    -fx-border-color: #c3ffb6;
+    -fx-border-width: 5px;
+}
+
